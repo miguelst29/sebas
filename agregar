@@ -1,0 +1,29 @@
+#168568
+/sbin/iptables -t nat -I PREROUTING -s 192.168.41.0/24 -d 192.168.31.88 -j ACCEPT
+/sbin/iptables -t nat -I POSTROUTING -s 192.168.41.0/24 -d 192.168.31.88 -j ACCEPT
+/sbin/iptables -I FORWARD -s 192.168.41.0/24 -d 192.168.31.88 -j ACCEPT
+/sbin/iptables -I FORWARD -s 192.168.31.88 -d 192.168.41.0/24 -j ACCEPT
+
+
+/sbin/iptables -t nat -I PREROUTING -s 192.168.41.0/24 -d 192.168.31.90 -j ACCEPT
+/sbin/iptables -t nat -I POSTROUTING -s 192.168.41.0/24 -d 192.168.31.90 -j ACCEPT
+/sbin/iptables -I FORWARD -s 192.168.41.0/24 -d 192.168.31.90 -j ACCEPT
+/sbin/iptables -I FORWARD -s 192.168.31.90 -d 192.168.41.0/24 -j ACCEPT
+
+
+/sbin/iptables -t nat -I PREROUTING -s 192.168.41.0/24 -d 192.168.31.94 -j ACCEPT
+/sbin/iptables -t nat -I POSTROUTING -s 192.168.41.0/24 -d 192.168.31.94 -j ACCEPT
+/sbin/iptables -I FORWARD -s 192.168.41.0/24 -d 192.168.31.94 -j ACCEPT
+/sbin/iptables -I FORWARD -s 192.168.31.94 -d 192.168.41.0/24 -j ACCEPT
+
+
+/sbin/iptables -t nat -I PREROUTING -s 192.168.41.0/24 -d 192.168.31.92 -j ACCEPT
+/sbin/iptables -t nat -I POSTROUTING -s 192.168.41.0/24 -d 192.168.31.92 -j ACCEPT
+/sbin/iptables -I FORWARD -s 192.168.41.0/24 -d 192.168.31.92 -j ACCEPT
+/sbin/iptables -I FORWARD -s 192.168.31.92 -d 192.168.41.0/24 -j ACCEPT
+
+
+/sbin/iptables -t nat -I PREROUTING -s 192.168.41.0/24 -d 192.168.63.58 -j ACCEPT
+/sbin/iptables -t nat -I POSTROUTING -s 192.168.41.0/24 -d 192.168.63.58 -j ACCEPT
+/sbin/iptables -I FORWARD -s 192.168.41.0/24 -d 192.168.63.58 -j ACCEPT
+/sbin/iptables -I FORWARD -s 192.168.63.58 -d 192.168.41.0/24 -j ACCEPT
